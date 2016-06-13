@@ -6,20 +6,25 @@ git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 # Make the appropriate additions to your .vimrc 
 # changes found in the vimrc-additions file
 
-# create the neobundle file at:
-~/.vim/neobundle.vim 
-You can copy the neobundle.vim file from this directory
+# Copy neobundle.vim to ~/.vim/
+cp neobundle.vim ~/.vim/neobundle.vim 
 
-# create the plugin directory to hold plugin specific config
+# Create the plugin directory to hold plugin specific config
+# I keep each plugin's config in a file with the same name as the plugin.
+# This isn't necessary, but I find it keeps my settings organized.
 mkdir -p ~/.vim/plugin
-cp syntastic.vim ~/.vim/plugin
+cp airline.vim ~/.vim/plugin
 cp git-gutter.vim ~/.vim/plugin
+cp NERDTree.vim ~/.vim/plugin
+cp rainbow.vim ~/.vim/plugin
+cp syntastic.vim ~/.vim/plugin
 
 # Optional 
+# 
 # create ~/.vim/ftplugin
 mkdir -p ~/.vim/ftplugin
 # copy in any filetype specific config
 
-# Once all of that is done execute this command from your terminal:
+# Once all of that is done execute this command to install plugins
 vim +NeoBundleInstall +qall
 ```
