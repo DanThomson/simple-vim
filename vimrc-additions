@@ -1,0 +1,21 @@
+" At the beginning of your .vimrc file paste the following:
+"===============================================================================
+"                                  NeoBundle
+"===============================================================================
+" This has something to do with stopping the interpretation of this file if
+" the build size is too small, but I'm not sure exactly what.
+if !1 | finish | endif
+
+"make neobundle available
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+" Read vimrc extension for neobundles
+if filereadable(expand("~/.vim/neobundle.vim"))
+    source ~/.vim/neobundle.vim
+endif
+
+
+" for syntastic and syntax highlighting
+if has("syntax")
+   syntax on
+endif
