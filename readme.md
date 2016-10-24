@@ -1,3 +1,7 @@
+Simple vim plugin setup with sample plugins.
+TODO: update for dein.nvim and vim8.0+
+
+
 ``` shell 
 
 mkdir -p ~/.vim/bundle
@@ -28,3 +32,7 @@ mkdir -p ~/.vim/ftplugin
 # Once all of that is done execute this command to install plugins
 vim +NeoBundleInstall +qall
 ```
+
+## License
+
+[The unlicense](./LICENSE)
